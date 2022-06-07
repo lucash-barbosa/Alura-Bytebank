@@ -1,8 +1,10 @@
-/*part 1
 import { Cliente } from "./Cliente.js";
 import {ContaCorrente} from "./Conta/ContaCorrente.js";
 import {ContaPoupanca} from "./Conta/ContaPoupanca.js";
 import {ContaSalario} from "./Conta/ContaSalario.js";
+import { Gerente } from "./Funcionario/Gerente.js";
+import { Diretor } from "./Funcionario/Diretor.js";
+import { SistemaAutenticacao } from "./SistemaAutenticacao.js";
 
 const cliente1 = new Cliente("Ricardo", 11122233309);
 
@@ -39,13 +41,6 @@ console.log("Saldo: " + contaSalario.saldo);
 console.log("Agencia: " + contaSalario.agencia);
 console.log(contaSalario.cliente);
 console.log("cpf: " + contaSalario.cliente.cpf);
-*/
-
-//part 2
-import { Cliente } from "./Cliente.js";
-import { Gerente } from "./Funcionario/Gerente.js";
-import { Diretor } from "./Funcionario/Diretor.js";
-import { SistemaAutenticacao } from "./SistemaAutenticacao.js";
 
 const diretor = new Diretor("Rodrigo", 100000, 12345678900);
 diretor.cadastrarSenha("123456");
@@ -58,6 +53,11 @@ const cliente = new Cliente("lais", 78945612379, "456")
 const gerentEestaLogado = SistemaAutenticacao.login(gerente, "123");
 const diretorEstaLogado = SistemaAutenticacao.login(diretor, "123456");
 
-const clienteEstaLogado = SistemaAutenticacao.login(cliente, "456");
+const clienteEstaLogado = SistemaAutenticacao.login(cliente, "456")
 
-console.log(gerentEestaLogado, diretorEstaLogado, clienteEstaLogado);
+console.log("-------------");
+
+console.log("Conta é autenticavel")
+console.log("Gerente: " + gerentEestaLogado);
+console.log("Diretor: " + diretorEstaLogado);
+console.log("cliente: " + clienteEstaLogado);
