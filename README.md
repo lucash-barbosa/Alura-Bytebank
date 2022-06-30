@@ -8,4 +8,5 @@
 É possivel baixar o projeto nesse <a href="https://github.com/lucash-barbosa/Alura-Bytebank/archive/refs/heads/master.zip">link</a>
 
 ## Como Usar
-Executar o index.js no terminal com "npm run ./index.js"
+Após baixar o projeto
+Execute o index.js no terminal com "npm run ./index.js"
