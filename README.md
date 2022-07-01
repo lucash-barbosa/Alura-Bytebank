@@ -9,4 +9,4 @@
 
 ## Como Usar
 Após baixar o projeto
-Execute o index.js no terminal com "npm run ./index.js"
+Execute o index.js no terminal com "node ./index.js"
